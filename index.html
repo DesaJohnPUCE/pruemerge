@@ -6,33 +6,22 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
     <link rel="stylesheet" href="estilos.css">
+
 </head>
 
 <body>
-    <!-- Proyecto Inicial -->
-    <h1>Estos son otros cambios</h1>
-    <div>
-        <p>Estos son los cambios del programador 2</p>
-    </div>
-    <h1>Este es el proyecto base</h1>
-    <div>
-        <ul>
-            <li>Primer Elemento</li>
-        </ul>
-        <button>Boton</button>
-    </div>
-    <!-- Division programador 1-->
-    <div>
-        <label for=""></label><label for=""></label>
-        <input type="text"><input type="text">
-        <button></button>
-    </div>
-    <!-- Division programador 2-->
-    <div>
-        <ul>
-            <li>Elemento 1</li>
-        </ul>
-    </div>
+    <input type="text" id="miInput" placeholder="Escribe Algo">
+    <p id="mensaje"></p>
+
+    <script>
+        const input = document.getElementById('miInput');
+        const mensaje = document.getElementById('mensaje');
+
+        input.addEventListener('input', function teclado() {
+            mensaje.textContent = input.value;
+        });
+
+    </script>
 </body>
 
 </html>
